@@ -16,49 +16,53 @@
 <body>
     <header>
         <!--Navbar start-->
-        <nav class="navbar navbar-expand-lg">
+        <style>
+            /* Garante que a navbar esteja sobre a imagem */
+            .navbar {
+                transition: all 0.4s ease-in-out;
+            }
+            /* Cor de fundo ao rolar a página */
+            .navbar.scrolled {
+                background-color: rgba(0, 0, 0, 0.8) !important;
+                backdrop-filter: blur(10px);
+            }
+        </style>
+        
+        <nav class="navbar navbar-expand-lg bg-transparent position-absolute w-100">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="./Image/logo/Logo Eiffel do Dande.png" width="100px"
-                        alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <a class="navbar-brand text-white" href="#">
+                    <img src="./Image/logo/Logo Eiffel do Dande.png" width="120px" alt="Logo">
+                </a>
+                <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                    aria-expanded="false" aria-label="Abrir Menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+        
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./Index.html">Início</a>
+                            <a class="nav-link text-white fw-bold" href="./Index.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./paginas/Noticias.html">Noticías</a>
+                            <a class="nav-link text-white fw-semibold" href="./paginas/Noticias.html">Notícias</a>
                         </li>
-                        <!--<li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Galeria
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="./paginas/GaleriaDeFotos.html">Fotos</a></li>
-                                <li><a class="dropdown-item" href="./paginas/GaleriaDeVideos.html">Videos</a></li>
-                            </ul>
-                        </li>-->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle text-white fw-semibold" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Sobre
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu border-0 shadow-sm rounded">
                                 <li><a class="dropdown-item" href="./paginas/SobreLiceu.html">Liceu</a></li>
                                 <li><a class="dropdown-item" href="./paginas/SobreDirecao.html">Direção</a></li>
-                                <li><a class="dropdown-item" href="./paginas/SobreSecretaria.html">Secretária</a></li>
+                                <li><a class="dropdown-item" href="./paginas/SobreSecretaria.html">Secretaria</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./paginas/Contatos.html">Contatos</a>
+                            <a class="nav-link text-white fw-semibold" href="./paginas/Contatos.html">Contatos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://liceueiffel.redeeiffel.ao/caxito">Entrar</a>
+                            <a class="nav-link btn btn-primary text-white px-4 rounded-pill shadow-sm" href="https://liceueiffel.redeeiffel.ao/caxito">Entrar</a>
                         </li>
                     </ul>
                 </div>
@@ -139,6 +143,9 @@
     <!--Caroussel End-->
     <!--Feature Info Section-->
     <section class="feature mt-5 mb-5">
+        <div class="apresentacao">
+            <h2>POR QUE ESCOLHER O LICEU EIFFEL</h2>
+        </div>
         <div class="section feature">
             <div class="container">
                 <div class="row">
@@ -251,7 +258,7 @@
         <section class="">
             <div class="container text-center text-md-start mt-5">
                 <!-- Grid row -->
-                <div class="row mt-3">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
