@@ -241,6 +241,36 @@ header .nav-item .nav-link {
 /********************
 About Section
 *********************/
+/**
+.sobre .row {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .sobre .row {
+    width: 100%; /* Cada div ocupará 100% da linha em dispositivos móveis 
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+}
+**/
+.about-content {
+  padding: 20px;
+}
+
+@media (max-width: 991px) {
+  /* Para dispositivos móveis */
+  .about-content {
+    text-align: center; /* Centraliza o texto */
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .about {
   position: relative;
 }
