@@ -93,6 +93,7 @@ header .nav-item .nav-link {
   border-radius: 5%; /* Igual ao efeito rounded-pill */
   transform: scale(1.05); /* Leve aumento */
 }
+
 /* Quando o menu estiver aberto */
 .navbar-collapse.show {
   background-color: white; /* Fundo branco ao abrir */
