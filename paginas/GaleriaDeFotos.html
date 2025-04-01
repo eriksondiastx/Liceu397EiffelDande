@@ -16,17 +16,21 @@
 <body>
     <header>
         <!--Navbar start-->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg bg-transparent position-absolute w-100">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="../Image/logo/Logo Eiffel do Dande.png" width="100px"
-                        alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand text-white" href="#">
+                    <img src="../Image/logo/Logo Eiffel do Dande.png" width="120px" alt="Logo">
+                </a>
+                <!-- Botão hamburguer -->
+                <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                    aria-expanded="false" aria-label="Abrir Menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        
+                <!-- Menus -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="../Index.html">Início</a>
                         </li>
@@ -122,75 +126,65 @@
     </section>
     <!--Caroussel End-->
     </div><p></p><p></p>
-    <div class="galeria" id="galeria">
-        <div class="row">
-            <div class="carousel-container">
-                <div class="lightbox">
-                    <div class="multi-carousel">
-                      <div class="multi-carousel-inner">
-                        <div class="multi-carousel-item">
-                          <img
-                            src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp"
-                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
-                            alt="Table Full of Spices"
-                            class="w-100"
-                          />
+    <div class="apresentacao">
+        <h2>GALERIA DE FOTOS</h2>
+    </div>
+    <div class="galeria-fotos" id="galeria-fotos">
+        
+        <div class="carousel-container">
+            <div class="lightbox">
+                <div class="multi-carousel">
+                    <div class="multi-carousel-inner">
+                        <div class="galeria-imagem multi-carousel-item">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp"
+                                data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
+                                alt="Table Full of Spices"
+                                class="w-100 lightbox-trigger" />
                         </div>
-                        <div class="multi-carousel-item">
-                          <img
-                            src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/2.webp"
-                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/2.webp"
-                            alt="Winter Landscape"
-                            class="w-100"
-                          />
+                        <div class="galeria-imagem multi-carousel-item">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/2.webp"
+                                data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/2.webp"
+                                alt="Winter Landscape"
+                                class="w-100 lightbox-trigger" />
                         </div>
-                        <div class="multi-carousel-item">
-                          <img
-                            src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/3.webp"
-                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/3.webp"
-                            alt="View of the City in the Mountains"
-                            class="w-100"
-                          />
+                        <div class=" galeria-imagem multi-carousel-item">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/3.webp"
+                                data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/3.webp"
+                                alt="View of the City in the Mountains"
+                                class="w-100 lightbox-trigger" />
                         </div>
-                        <div class="multi-carousel-item">
-                          <img
-                            src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/4.webp"
-                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/4.webp"
-                            alt="Place Royale Bruxelles"
-                            class="w-100"
-                          />
+                        <div class="galeria-imagem multi-carousel-item">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/4.webp"
+                                data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/4.webp"
+                                alt="Place Royale Bruxelles"
+                                class="w-100 lightbox-trigger" />
                         </div>
-                      </div>
-                      <button
-                        class="carousel-control-prev"
-                        type="button"
-                        tabindex="0"
-                        data-mdb-slide="prev"
-                      >
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      </button>
-                      <button
-                        class="carousel-control-next"
-                        type="button"
-                        tabindex="0"
-                        data-mdb-slide="next"
-                      >
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      </button>
                     </div>
-                  </div>
+                    <button class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
             </div>
+        </div>
+    
+        <!-- Lightbox para exibição de imagens em tela cheia -->
+        <div id="lightbox" class="lightbox-overlay">
+            <span class="close-lightbox">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
         </div>
     </div>
     <!-- Footer -->
     <footer class="text-center text-lg-start text-white pt-4" style="background-color: #065dfb;">
-        <!-- Section: Social media -->
+        
 
         <!-- Section: Links  -->
-        <section class="">
+        <section class="footer-links">
             <div class="container text-center text-md-start mt-5">
                 <!-- Grid row -->
-                <div class="row mt-3">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
@@ -281,7 +275,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-
+<!-- Galeria-Script JS -->
+ <script src="/js/script.js"></script>
 </body>
 
 </html>

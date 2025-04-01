@@ -365,8 +365,97 @@ Galeria Section
   right: 5%;
 }
 
+/**FOOTER**/
 .footer-links a:hover {
   background-color: #011c44;
-  padding: 10px;
+  padding: 7px;
   border-radius: 10px;
+}
+
+/* Estiliza a galeria de fotos */
+.galeria-imagem {
+  padding: 10px;
+}
+.galeria-fotos {
+  width: 100vw; /* Largura total da viewport */
+  height: 100vh; /* Altura total da viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  overflow: hidden; /* Evita rolagem desnecessária */
+  padding: 20px;
+}
+
+/* Container da galeria usando CSS Grid */
+.multi-carousel {
+  display: grid;
+  grid-template-columns: repeat(
+    5,
+    1fr,
+    minmax(500px, 1fr)
+  ); /* Se adapta automaticamente */
+  gap: 15px;
+  width: 100%;
+  max-width: 1200px;
+}
+/* Cada item ocupa um espaço adequado */
+.multi-carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Ajusta tamanho das imagens */
+.multi-carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 300px; /* Para manter um tamanho proporcional */
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+  .multi-carousel {
+    grid-template-columns: 1fr; /* Apenas uma imagem por linha */
+  }
+
+  .multi-carousel-item img {
+    max-height: 200px;
+  }
+}
+
+.multi-carousel-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox (modal de imagem em tela cheia) */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+/* Botão de fechar o Lightbox */
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
 }
