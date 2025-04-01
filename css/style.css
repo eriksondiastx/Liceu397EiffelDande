@@ -459,3 +459,82 @@ Galeria Section
   color: white;
   cursor: pointer;
 }
+
+/*GALERIA DE VÍDEOS*/
+
+/* Estilização geral */
+.galeria-videos {
+  width: 100%;
+  height: 100%; /* Ocupa toda a tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fa; /* Fundo escuro para destaque */
+  padding: 20px;
+}
+
+/* Alinha os vídeos horizontalmente em desktops */
+.multi-carousel-inner {
+  display: flex;
+  flex-wrap: wrap; /* Faz os vídeos quebrarem de linha se necessário */
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Estilização dos vídeos */
+.galeria-video {
+  flex: 0 0 auto;
+  width: 300px;
+  scroll-snap-align: center;
+}
+
+.video-preview {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Lightbox */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+  .multi-carousel-inner {
+    flex-direction: column;
+  }
+
+  .galeria-video {
+    width: 90%;
+    max-width: none;
+  }
+}
