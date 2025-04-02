@@ -199,6 +199,10 @@ header .nav-item .nav-link {
 }
 
 /**********feature Section***********/
+
+.section {
+  padding-top: 30px;
+}
 .feature .main-feature-box {
   width: 100%; /* Cada div ocupa 23% da largura em telas grandes */
   text-align: center;
@@ -316,29 +320,81 @@ About Section
 Courses Section
 *********************/
 .courses {
+  text-align: center;
+}
+
+.apresentacao h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #065dfb;
   margin-bottom: 30px;
-  position: relative;
-  padding: 40px 30px;
-  z-index: 1;
-  overflow: hidden;
-  transition: 5s;
 }
-.courses h2 {
+
+/* Estilização dos cards */
+.course-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 40px; /* Maior espaçamento entre os cursos */
 }
-.courses .single-courses-box icon {
-  margin-bottom: 21px;
+
+/* Animação ao passar o mouse */
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
-.courses .single-courses-box h3 {
-  text-align: center;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
+
+/* Ícones */
+.course-card .icon img {
+  max-width: 300px; /* Aumenta o tamanho da imagem */
+  height: auto;
+  margin-bottom: 15px;
 }
-.courses .single-courses-box p {
-  font-size: 20px;
-  text-align: center;
+
+/* Títulos */
+.course-card h3 {
+  font-size: 1.7rem;
+  color: #333;
+  margin-bottom: 12px;
 }
+
+/* Descrição */
+.course-card p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Botão "Saiba Mais" */
+.button3 {
+  display: inline-block;
+  background: #065dfb;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.button3:hover {
+  background: #023a96;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .course-card {
+    margin-bottom: 30px;
+  }
+
+  .course-card .icon img {
+    max-width: 200px; /* Ajusta o tamanho das imagens em telas menores */
+  }
+}
+
 /********************
 Galeria Section
 *********************/

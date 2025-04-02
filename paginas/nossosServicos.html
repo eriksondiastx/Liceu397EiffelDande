@@ -16,17 +16,21 @@
 <body>
     <header>
         <!--Navbar start-->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg bg-transparent position-absolute w-100">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="../Image/logo/Logo Eiffel do Dande.png" width="100px"
-                        alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand text-white" href="#">
+                    <img src="../Image/logo/Logo Eiffel do Dande.png" width="120px" alt="Logo">
+                </a>
+                <!-- Botão hamburguer -->
+                <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                    aria-expanded="false" aria-label="Abrir Menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        
+                <!-- Menus -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="../Index.html">Início</a>
                         </li>
@@ -122,14 +126,12 @@
     </section>
     <!--Caroussel End-->
     <!--Feature Info Section-->
-    <section class="feature mt-5 mb-5">
-        <div class="section feature">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 
-                        col-sm-6">
-                        <div class="main-feature-box">
-                            <div class="icon">
+    <div class="section feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="main-feature-box">
+                        <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                                     class="bi bi-eyeglasses" viewBox="0 0 16 16">
                                     <path
@@ -141,8 +143,7 @@
                                 nacional e internacional nas universidades, Institutos Superiores e pela UNESCO.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 
-                        col-sm-6">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="main-feature-box">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
@@ -162,8 +163,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 
-                        col-sm-6">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="main-feature-box">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
@@ -180,8 +180,7 @@
                                 profissionalismo. </p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 
-                        col-sm-6">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="main-feature-box">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
@@ -204,15 +203,18 @@
     <!--End Feature Info Section-->
     <!--About Section start-->
     <section div class="section">
+        <div class="apresentacao">
+            <h2>SOBRE NÓS</h2>
+        </div>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 d-none d-lg-flex">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 order-lg-1 order-2 text-center">
                     <img src="../Image/Sobre/liceu/Monumento Central.png" class="img-fluid" alt="">
                 </div>
-                <div class="col-md-6">
-                    <div class="about-content" style="text-align: justify;">
-                        <span>Sobre Nós</span>
-                        <h2>Liceu 397 Eiffel do Dande</h2>
+                <div class="col-lg-6 col-md-12 order-lg-2 order-1">
+                    <div class="about-content text-center text-lg-start" >
+                        
+                        <h3>Liceu 397 Eiffel do Dande</h3>
                         <p>O Liceu 397 Eiffel do Dande é uma instituição escolar comparticipada de ensino secundário
                             Bi-lingue (Português e Francês), no curso de Ciências Físicas e Biológicas, localizado na
                             província do Bengo, município da Açucareira, na rua direta do Sassa Cária. É uma escola
@@ -242,54 +244,64 @@
     <!--About Section End-->
     <!--Courses Section Start-->
     <section class="courses mt-5 mb-5">
+        <div class="apresentacao text-center">
+            <h2>NOSSOS CURSOS</h2>
+        </div>
         <div class="container">
-            <div class="row mt-5">
-                <div class="col-lg-4">
-                    <div class="single-courses-box border">
+            <div class="row mt-5 justify-content-center">
+                <!-- Curso 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="course-card">
                         <div class="icon">
-                            <img src="../Image/laboratorios/informatica.png" height="" class="img-fluid" alt="">
+                            <img src="../Image/laboratorios/informatica.png" alt="Informática" class="img-fluid">
                         </div>
                         <h3>INFORMÁTICA</h3>
-                        <p> </p>
-                        <!-- <div class="buttons">
-                                <a href="" class="button3">Leia Mais <i class="bi bi-arrow-right-circle-fill"></i></a>
-                            </div>-->
+                        <p>Aprenda habilidades tecnológicas essenciais para o mercado.</p>
+                        <a href="#" class="button3">Saiba Mais <i class="bi bi-arrow-right-circle-fill"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="single-courses-box border">
+                <!-- Curso 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="course-card">
                         <div class="icon">
-                            <img src="../Image/laboratorios/geologia.png" height="60px" class="img-fluid" alt="">
+                            <img src="../Image/laboratorios/geologia.png" alt="Geologia" class="img-fluid">
                         </div>
                         <h3>GEOLOGIA</h3>
-                        <p></p>
+                        <p>Explore a estrutura da Terra e suas formações.</p>
+                        <a href="#" class="button3">Saiba Mais <i class="bi bi-arrow-right-circle-fill"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="single-courses-box border">
+                <!-- Curso 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="course-card">
                         <div class="icon">
-                            <img src="../Image/laboratorios/biologia.png" height="60px" class="img-fluid" alt="">
+                            <img src="../Image/laboratorios/biologia.png" alt="Biologia" class="img-fluid">
                         </div>
-                        <h3>BILOGIA</h3>
-                        <p></p>
-                    </div>
-                </div><p></p><p></p>
-                <div class="col-lg-4">
-                    <div class="single-courses-box border">
-                        <div class="icon">
-                            <img src="../Image/laboratorios/fisica.png" height="60px" class="img-fluid" alt="">
-                        </div>
-                        <h3>FISÍCA</h3>
-                        <p></p>
+                        <h3>BIOLOGIA</h3>
+                        <p>Descubra os segredos da vida e dos organismos.</p>
+                        <a href="#" class="button3">Saiba Mais <i class="bi bi-arrow-right-circle-fill"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="single-courses-box border">
+                <!-- Curso 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="course-card">
                         <div class="icon">
-                            <img src="../Image/laboratorios/quimica.png" height="60px" class="img-fluid" alt="">
+                            <img src="../Image/laboratorios/fisica.png" alt="Física" class="img-fluid">
+                        </div>
+                        <h3>FÍSICA</h3>
+                        <p>Entenda as leis do universo através da ciência.</p>
+                        <a href="#" class="button3">Saiba Mais <i class="bi bi-arrow-right-circle-fill"></i></a>
+                    </div>
+                </div>
+                <!-- Curso 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="course-card">
+                        <div class="icon">
+                            <img src="../Image/laboratorios/quimica.png" alt="Química" class="img-fluid">
                         </div>
                         <h3>QUÍMICA</h3>
-                        <p></p>
+                        <p>Desvende as propriedades e reações das substâncias.</p>
+                        <a href="#" class="button3">Saiba Mais <i class="bi bi-arrow-right-circle-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -299,12 +311,13 @@
 
     <!-- Footer -->
     <footer class="text-center text-lg-start text-white pt-4" style="background-color: #065dfb;">
+        
 
         <!-- Section: Links  -->
-        <section class="">
+        <section class="footer-links">
             <div class="container text-center text-md-start mt-5">
                 <!-- Grid row -->
-                <div class="row mt-3">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
