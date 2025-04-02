@@ -1,39 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-pt">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <!--Custom CSS-->
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <!--Navbar start-->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="../Image/logo/Logo Eiffel do Dande.png" width="100px"
-                        alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../Index.html">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./paginas/Noticias.html">Noticías</a>
-                        </li>
-                        <!--<li class="nav-item dropdown">
+      <!--Navbar start-->
+      <nav
+        class="navbar navbar-expand-lg bg-transparent position-absolute w-100"
+      >
+        <div class="container">
+          <a class="navbar-brand text-white" href="#">
+            <img
+              src="../Image/logo/Logo Eiffel do Dande.png"
+              width="120px"
+              alt="Logo"
+            />
+          </a>
+          <!-- Botão hamburguer -->
+          <button
+            class="navbar-toggler border-0 text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Abrir Menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menus -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../Index.html"
+                  >Início</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/Noticias.html">Noticías</a>
+              </li>
+              <!--<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Galeria
@@ -43,262 +67,328 @@
                                 <li><a class="dropdown-item" href="./GaleriaDeVideos.html">Videos</a></li>
                             </ul>
                         </li>-->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Sobre
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="SobreLiceu.html">Liceu</a></li>
-                                <li><a class="dropdown-item" href="SobreDirecao.html">Direção</a></li>
-                                <li><a class="dropdown-item" href="SobreSecretaria.html">Secretária</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Contatos.html">Contatos</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sobre
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="SobreLiceu.html">Liceu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="SobreDirecao.html"
+                      >Direção</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="SobreSecretaria.html"
+                      >Secretária</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contatos.html">Contatos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <!--Navbar End-->
     <!--Caroussel Start-->
     <section class="hero" id="hero">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="carousel-background">
-                        <img src="../Image/Home Slider/Entrada do Liceu.JPG" alt="">
-                        <div class="carousel-container">
-                            <div class="carousel-content-container">
-                                <h2>BEMVINDO AO LICEU 397 EIFFEL DO DANDE</h2>
-                                <p>O Liceu 397 Eiffel do Dande é uma instituição escolar comparticipada de ensino
-                                    secundário Bi-lingue (Português e Francês), no curso de Ciências Físicas e
-                                    Biológicas, localizado na província do Bengo, município da Açucareira, na rua direta
-                                    do Sassa Cária. É uma escola pública do II Ciclo do ensino secundário.
-                                </p>
-                                <div class="buttons">
-                                    <a href="" class="button1">Nossos Serviços</a>
-                                    <a href="" class="button1">Nos Contate</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-background">
+              <img src="../Image/Home Slider/Entrada do Liceu.JPG" alt="" />
+              <div class="carousel-container">
+                <div class="carousel-content-container">
+                  <h2>BEMVINDO AO LICEU 397 EIFFEL DO DANDE</h2>
+                  <p>
+                    O Liceu 397 Eiffel do Dande é uma instituição escolar
+                    comparticipada de ensino secundário Bi-lingue (Português e
+                    Francês), no curso de Ciências Físicas e Biológicas,
+                    localizado na província do Bengo, município da Açucareira,
+                    na rua direta do Sassa Cária. É uma escola pública do II
+                    Ciclo do ensino secundário.
+                  </p>
+                  <div class="buttons">
+                    <a href="" class="button1">Nossos Serviços</a>
+                    <a href="" class="button1">Nos Contate</a>
+                  </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="carousel-background">
-                        <img src="../Image/Home Slider/Monumento Central.png" alt="">
-                        <div class="carousel-container">
-                            <div class="carousel-content-container">
-                                <h2>BIENVENUE AU LYCÉE 397 EIFFEL DO DANDE</h2>
-                                <p>Le Lycée 397 Eiffel do Dande est un établissement scolaire à enseignement
-                                    subventionné
-                                    École secondaire bilingue (portugais et français), en sciences physiques et
-                                    Biologique, situé dans la province de Bengo, municipalité d'Açucareira, sur la rue
-                                    directe
-                                    de Sassa Caria. C'est une école publique du II Cycle de l'enseignement secondaire.
-                                </p>
-                                <div class="buttons">
-                                    <a href="" class="button1">Nos Services</a>
-                                    <a href="" class="button1">Contactez-nous</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-background">
+              <img src="../Image/Home Slider/Monumento Central.png" alt="" />
+              <div class="carousel-container">
+                <div class="carousel-content-container">
+                  <h2>BIENVENUE AU LYCÉE 397 EIFFEL DO DANDE</h2>
+                  <p>
+                    Le Lycée 397 Eiffel do Dande est un établissement scolaire à
+                    enseignement subventionné École secondaire bilingue
+                    (portugais et français), en sciences physiques et
+                    Biologique, situé dans la province de Bengo, municipalité
+                    d'Açucareira, sur la rue directe de Sassa Caria. C'est une
+                    école publique du II Cycle de l'enseignement secondaire.
+                  </p>
+                  <div class="buttons">
+                    <a href="" class="button1">Nos Services</a>
+                    <a href="" class="button1">Contactez-nous</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
     <!--Caroussel End-->
     <!--Feature Info Section-->
     <section class="feature mt-5 mb-5">
-        <div class="section feature">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 
-                        col-sm-6">
-                        <div class="main-feature-box">
-                            <div class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
-                                    class="bi bi-book-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
-                                </svg>
-                            </div>
-                            <h3>BIBLIOTECA</h3>
-                            <p>A nossa biblioteca é recheada de livros em português e francês, e computadores com acesso
-                                a internet para que os nossos alunos possam pesquisar.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 
-                        col-sm-6">
-                        <div class="main-feature-box">
-                            <div class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-shield-fill-exclamation" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-                                </svg>
-                            </div>
-                            <h3>SEGURANÇA</h3>
-                            <p>Contamos com uma equipa de segurança capacitada para garantir a segurança e bem estar dos nossos seguranças.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 
-                        col-sm-6">
-                        <div class="main-feature-box">
-                            <div class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-lungs-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a.5.5 0 0 1 .5.5v5.243L9 7.1V4.72C9 3.77 9.77 3 10.72 3c.524 0 1.023.27 1.443.592.431.332.847.773 1.216 1.229.736.908 1.347 1.946 1.58 2.48.176.405.393 1.16.556 2.011.165.857.283 1.857.24 2.759-.04.867-.232 1.79-.837 2.33-.67.6-1.622.556-2.741-.004l-1.795-.897A2.5 2.5 0 0 1 9 11.264V8.329l-1-.715-1 .715V7.214c-.1 0-.202.03-.29.093l-2.5 1.786a.5.5 0 1 0 .58.814L7 8.329v2.935A2.5 2.5 0 0 1 5.618 13.5l-1.795.897c-1.12.56-2.07.603-2.741.004-.605-.54-.798-1.463-.838-2.33-.042-.902.076-1.902.24-2.759.164-.852.38-1.606.558-2.012.232-.533.843-1.571 1.579-2.479.37-.456.785-.897 1.216-1.229C4.257 3.27 4.756 3 5.28 3 6.23 3 7 3.77 7 4.72V7.1l.5-.357V1.5A.5.5 0 0 1 8 1Zm3.21 8.907a.5.5 0 1 0 .58-.814l-2.5-1.786A.498.498 0 0 0 9 7.214V8.33l2.21 1.578Z"/>
-                                  </svg>
-                            </div>
-                            <h3>QUADRA MULTIUSOS</h3>
-                            <p>Contamos com muitas praticas desportivas, campeonatos internos e aulas de educação física. </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 
-                        col-sm-6">
-                        <div class="main-feature-box">
-                            <div class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
-                                    <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                                    <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
-                                  </svg>
-                            </div>
-                            <h3>REFEITÓRIO</h3>
-                            <p>Temos um refeitório onde podemos nos alimentar de bebidas naturais, prezando a saúde e bem estar de todos.</p>
-                        </div>
-                    </div>
+      <div class="apresentacao">
+        <h2>POR QUE ESCOLHER O LICEU EIFFEL</h2>
+      </div>
+      <div class="section feature">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="main-feature-box">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="35"
+                    fill="currentColor"
+                    class="bi bi-book-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
+                    />
+                  </svg>
                 </div>
+                <h3>BIBLIOTECA</h3>
+                <p>
+                  A nossa biblioteca é recheada de livros em português e
+                  francês, e computadores com acesso a internet para que os
+                  nossos alunos possam pesquisar.
+                </p>
+              </div>
             </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="main-feature-box">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="35"
+                    fill="currentColor"
+                    class="bi bi-shield-fill-exclamation"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
+                    />
+                  </svg>
+                </div>
+                <h3>SEGURANÇA</h3>
+                <p>
+                  Contamos com uma equipa de segurança capacitada para garantir
+                  a segurança e bem estar dos nossos seguranças.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="main-feature-box">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="35"
+                    fill="currentColor"
+                    class="bi bi-lungs-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 1a.5.5 0 0 1 .5.5v5.243L9 7.1V4.72C9 3.77 9.77 3 10.72 3c.524 0 1.023.27 1.443.592.431.332.847.773 1.216 1.229.736.908 1.347 1.946 1.58 2.48.176.405.393 1.16.556 2.011.165.857.283 1.857.24 2.759-.04.867-.232 1.79-.837 2.33-.67.6-1.622.556-2.741-.004l-1.795-.897A2.5 2.5 0 0 1 9 11.264V8.329l-1-.715-1 .715V7.214c-.1 0-.202.03-.29.093l-2.5 1.786a.5.5 0 1 0 .58.814L7 8.329v2.935A2.5 2.5 0 0 1 5.618 13.5l-1.795.897c-1.12.56-2.07.603-2.741.004-.605-.54-.798-1.463-.838-2.33-.042-.902.076-1.902.24-2.759.164-.852.38-1.606.558-2.012.232-.533.843-1.571 1.579-2.479.37-.456.785-.897 1.216-1.229C4.257 3.27 4.756 3 5.28 3 6.23 3 7 3.77 7 4.72V7.1l.5-.357V1.5A.5.5 0 0 1 8 1Zm3.21 8.907a.5.5 0 1 0 .58-.814l-2.5-1.786A.498.498 0 0 0 9 7.214V8.33l2.21 1.578Z"
+                    />
+                  </svg>
+                </div>
+                <h3>QUADRA MULTIUSOS</h3>
+                <p>
+                  Contamos com muitas praticas desportivas, campeonatos internos
+                  e aulas de educação física.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="main-feature-box">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="35"
+                    fill="currentColor"
+                    class="bi bi-egg-fried"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    <path
+                      d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"
+                    />
+                  </svg>
+                </div>
+                <h3>REFEITÓRIO</h3>
+                <p>
+                  Temos um refeitório onde podemos nos alimentar de bebidas
+                  naturais, prezando a saúde e bem estar de todos.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--End Feature Info Section-->
 
     <!-- Footer -->
-    <footer class="text-center text-lg-start text-white pt-4" style="background-color: #065dfb;">
-        <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            <!-- Left -->
-
-            <!-- Right -->
-            <div>
-                <a href="facebook.com/escolaeiffelcaxitonews" class="me-4 text-reset">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-instagram"></i>
-                </a>
+    <footer
+      class="text-center text-lg-start text-white pt-4"
+      style="background-color: #065dfb"
+    >
+      <!-- Section: Links  -->
+      <section class="footer-links">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Liceu 397 Eiffel do Dande
+              </h6>
+              <p>POR UMA EDUCAÇÃO DE QUALIDADE</p>
             </div>
-            <!-- Right -->
-        </section>
-        <!-- Section: Social media -->
+            <!-- Grid column -->
 
-        <!-- Section: Links  -->
-        <section class="">
-            <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-gem me-3"></i>Liceu 397 Eiffel do Dande
-                        </h6>
-                        <p>
-                            POR UMA EDUCAÇÃO DE QUALIDADE
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            SERVIÇOS
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">ENSINO BILINGUE</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">LABORATÓRIOS EQUIPADOS</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">ACTIVIDADES EXTRACURRÍCULARES</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">ESPAÇOS VERDES</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            +SERVIÇOS
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">REFEITÓRIO</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">BIBLIOTECA</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">VIGILÂNCIA</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">HIGIENIZAÇÃO</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">CONTATOS</h6>
-                        <p><i class="fas fa-home me-3"></i> BENGO, CAXITO, AÇUCAREIRA, ANG</p>
-                        <p>
-                            <i class="fas fa-envelope me-3"></i>
-                            liceueiffelcaxito@gmail.com
-                        </p>
-                        <p><i class="fas fa-phone me-3"></i> + 244 234 351 020</p>
-                        <p><i class="fas fa-print me-3"></i> + 244 234 351 021</p>
-                    </div>
-                    <!-- Grid column -->
-                </div>
-                <!-- Grid row -->
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">SERVIÇOS</h6>
+              <p>
+                <a href="#!" class="text-reset">ENSINO BILINGUE</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">LABORATÓRIOS EQUIPADOS</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset"
+                  >ACTIVIDADES EXTRACURRÍCULARES</a
+                >
+              </p>
+              <p>
+                <a href="#!" class="text-reset">ESPAÇOS VERDES</a>
+              </p>
             </div>
-        </section>
-        <!-- Section: Links  -->
+            <!-- Grid column -->
 
-        <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            ©
-            <script language=javascript type="text/javascript">
-                now = new Date
-                document.write(now.getFullYear())
-            </script> Copyright:
-            <a class="text-reset fw-bold" href="">LICEU 397 EIFFEL DO DANDE</a>
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">+SERVIÇOS</h6>
+              <p>
+                <a href="#!" class="text-reset">REFEITÓRIO</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">BIBLIOTECA</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">VIGILÂNCIA</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">HIGIENIZAÇÃO</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">CONTATOS</h6>
+              <p>
+                <i class="fas fa-home me-3"></i> BENGO, CAXITO, AÇUCAREIRA, ANG
+              </p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                liceueiffelcaxito@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 244 234 351 020</p>
+              <p><i class="fas fa-print me-3"></i> + 244 234 351 021</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
         </div>
-        <!-- Copyright -->
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        ©
+        <script language="javascript" type="text/javascript">
+          now = new Date();
+          document.write(now.getFullYear());
+        </script>
+        Copyright:
+        <a class="text-reset fw-bold" href="">LICEU 397 EIFFEL DO DANDE</a>
+      </div>
+      <!-- Copyright -->
     </footer>
     <!-- Footer -->
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

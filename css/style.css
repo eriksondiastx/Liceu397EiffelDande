@@ -352,6 +352,7 @@ Courses Section
   max-width: 300px; /* Aumenta o tamanho da imagem */
   height: auto;
   margin-bottom: 15px;
+  border-radius: 15px;
 }
 
 /* Títulos */
