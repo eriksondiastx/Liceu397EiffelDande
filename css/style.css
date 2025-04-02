@@ -677,3 +677,84 @@ Galeria Section
     height: 200px;
   }
 }
+
+/***NOTÍCIA CONCURSO KANDENGUE***/
+.noticia-concurso-kandengue {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.noticia-concurso-kandengue .row {
+  height: 100%;
+}
+
+/* Imagem ocupa toda a div */
+.img-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 99%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+
+/* Conteúdo ocupa todo o espaço disponível */
+.about-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #065dfb;
+  margin-bottom: 20px;
+}
+
+/* Lista de prêmios */
+.premios-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #444;
+  margin-top: 20px;
+}
+
+.premios-list {
+  list-style: none;
+  padding: 0;
+}
+
+.premios-list li {
+  font-size: 1.1rem;
+  color: #333;
+  padding: 8px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .noticia-concurso-kandengue {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .noticia-concurso-kandengue .row {
+    flex-direction: column;
+  }
+
+  .img-container {
+    height: 300px;
+  }
+
+  .about-content {
+    padding: 20px;
+  }
+}
