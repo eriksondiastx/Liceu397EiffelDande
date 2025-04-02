@@ -188,25 +188,27 @@
     <br />
     <!--Caroussel End-->
     <!--About Section start-->
-    <!-- Seção Concurso Kandengue -->
+    <div class="apresentacao">
+      <h2>CONCURSO</h2>
+    </div>
     <section class="noticia-concurso-kandengue section mt-5 mb-5">
       <div class="container-fluid">
         <div class="row align-items-stretch">
-          <!-- Imagem (Ocupa 50% no desktop, 100% no mobile) -->
+          <!-- Imagem (Agora clicável) -->
           <div class="col-lg-6 p-0">
             <div class="img-container">
               <img
                 src="../Image/noticias/Concurso Kandengue.jpeg"
-                class="img-fluid"
+                class="img-fluid lightbox-trigger"
                 alt="Concurso Kandengue"
               />
             </div>
           </div>
 
-          <!-- Conteúdo (Ocupa 50% no desktop, 100% no mobile) -->
+          <!-- Conteúdo -->
           <div class="col-lg-6 d-flex align-items-center">
             <div class="about-content px-4">
-              <h2>II EDIÇÃO DO CONCURSO LITERÁRIO “KANDENGUE ESCRITOR”</h2>
+              <h3>II EDIÇÃO DO CONCURSO LITERÁRIO “KANDENGUE ESCRITOR”</h3>
               <p>
                 No âmbito do centenário de Agostinho Neto, foi realizado um
                 concurso denominado Kandengue escritor, cujo lema é:
@@ -214,16 +216,14 @@
                 promovido pela UNESCO.
               </p>
               <p>
-                O Liceu Eiffel participou do concurso e chegou à finalíssima,
-                onde a aluna <strong>Heliane Paulo Ventura</strong>, da 11ª
-                classe, turma A, conquistou o <strong>3º lugar</strong> na
-                categoria do II Ciclo com o texto "EQUÍVOCUS".
+                A aluna <strong>Heliane Paulo Ventura</strong> conquistou o
+                <strong>3º lugar</strong> com o texto "EQUÍVOCUS".
               </p>
 
               <h4 class="premios-title">🏆 Prêmios Recebidos:</h4>
               <ul class="premios-list">
                 <li>📱 Um Tablet</li>
-                <li>📚 Livros sobre Agostinho Neto e materiais didáticos</li>
+                <li>📚 Livros sobre Agostinho Neto</li>
                 <li>📜 Certificado de participação</li>
                 <li>
                   🖊️ Bolsa para formação em "Escrita Criativa e Ortografia"
@@ -231,15 +231,16 @@
                 <li>🎽 Chapéus e t-shirts para todos os participantes</li>
               </ul>
 
-              <p>
-                Nosso agradecimento especial à Direção Geral, professores,
-                alunos e todos que contribuíram para essa conquista! 🎉
-              </p>
-
               <p class="text-center fw-bold">Vamos à luta! ✨</p>
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- Lightbox para visualizar a imagem em tela cheia -->
+      <div id="lightbox" class="lightbox-overlay">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" />
       </div>
     </section>
     <!--About Section End-->
@@ -352,5 +353,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

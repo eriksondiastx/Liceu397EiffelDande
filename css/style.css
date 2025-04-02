@@ -679,6 +679,7 @@ Galeria Section
 }
 
 /***NOTÍCIA CONCURSO KANDENGUE***/
+/* Seção principal */
 .noticia-concurso-kandengue {
   height: 100vh;
   display: flex;
@@ -689,54 +690,65 @@ Galeria Section
   height: 100%;
 }
 
-/* Imagem ocupa toda a div */
+/* Imagem clicável */
 .img-container {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  border-radius: 15px;
+  margin-left: 5px;
 }
 
 .img-container img {
-  width: 99%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
-  margin-left: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Conteúdo ocupa todo o espaço disponível */
-.about-content {
+.img-container img:hover {
+  transform: scale(1.05);
+  border-radius: 15px;
+}
+
+/* Lightbox - Modal de imagem */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
   justify-content: center;
-  text-align: justify;
+  align-items: center;
 }
 
-.about-content h2 {
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+/* Botão de fechar */
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.about-content h3 {
   font-size: 2rem;
   font-weight: bold;
   color: #065dfb;
   margin-bottom: 20px;
-}
-
-/* Lista de prêmios */
-.premios-title {
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #444;
-  margin-top: 20px;
-}
-
-.premios-list {
-  list-style: none;
-  padding: 0;
-}
-
-.premios-list li {
-  font-size: 1.1rem;
-  color: #333;
-  padding: 8px 0;
 }
 
 /* Responsividade */
@@ -756,5 +768,11 @@ Galeria Section
 
   .about-content {
     padding: 20px;
+  }
+
+  .close-lightbox {
+    font-size: 30px;
+    top: 15px;
+    right: 20px;
   }
 }
