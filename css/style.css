@@ -59,7 +59,7 @@ header .nav-item .nav-link {
 .nav-link {
   transition: all 0.3s ease-in-out;
 
-  padding: 8px 15px; /* Adiciona espaço para um efeito mais visível */
+  padding: 8px 8px; /* Adiciona espaço para um efeito mais visível */
   text-align: center;
   align-items: center; /* Centraliza verticalmente */
   justify-content: center; /* Centraliza horizontalmente */
@@ -745,7 +745,6 @@ Galeria Section
 }
 
 .about-content h3 {
-  font-size: 2rem;
   font-weight: bold;
   color: #065dfb;
   margin-bottom: 20px;
@@ -848,6 +847,98 @@ Galeria Section
   }
 
   .olimpiadas .row {
+    flex-direction: column;
+  }
+
+  .img-container {
+    height: 300px;
+  }
+
+  .about-content {
+    padding: 20px;
+  }
+
+  .close-lightbox {
+    font-size: 30px;
+    top: 15px;
+    right: 20px;
+  }
+}
+
+/***NOTICIAS UNITEL ROBÓTICA**/
+
+/* Seção principal */
+.unitel-code {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.unitel-code .row {
+  height: 100%;
+}
+
+/* Imagem clicável */
+.img-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  margin-left: 5px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 900px;
+  object-fit: cover;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox - Modal de imagem */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+/* Botão de fechar */
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .unitel-code {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .unitel-code .row {
     flex-direction: column;
   }
 
