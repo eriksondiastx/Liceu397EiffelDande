@@ -867,39 +867,6 @@ Galeria Section
 
 /***NOTICIAS UNITEL ROBÓTICA**/
 
-/* Seção principal */
-.unitel-code {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
-.unitel-code .row {
-  height: 100%;
-}
-
-/* Imagem clicável */
-.img-container {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-
-  margin-left: 5px;
-}
-
-.img-container img {
-  width: 100%;
-  height: 900px;
-  object-fit: cover;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-}
-
-.img-container img:hover {
-  transform: scale(1.05);
-}
-
 /* Lightbox - Modal de imagem */
 .lightbox-overlay {
   display: none;
@@ -918,41 +885,66 @@ Galeria Section
   max-width: 90%;
   max-height: 90%;
   border-radius: 10px;
+  display: block;
+  margin: auto;
 }
 
-/* Botão de fechar */
-.close-lightbox {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 40px;
+/***CORPO DIRECTIVO***/
+/* Estilo Geral */
+.direcao {
+  text-align: center;
+}
+
+/* Cartões da Diretoria (AUMENTADOS) */
+.card-direcao {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px; /* Aumentado para mais espaço interno */
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Faz o cartão ocupar mais espaço */
+  max-width: 400px; /* Limitando tamanho */
+  margin: auto; /* Centralizando */
+}
+
+/* Imagens maiores */
+.card-direcao img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Título maior */
+.card-direcao h3 {
+  font-size: 22px;
   font-weight: bold;
-  color: white;
-  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+/* Texto maior */
+.card-direcao p {
+  font-size: 18px;
+  color: #444;
+}
+
+/* Efeito Hover Melhorado */
+.card-direcao:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-direcao:hover img {
+  transform: scale(1.1);
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .unitel-code {
-    height: auto;
-    padding: 20px 0;
-  }
-
-  .unitel-code .row {
-    flex-direction: column;
-  }
-
-  .img-container {
-    height: 300px;
-  }
-
-  .about-content {
-    padding: 20px;
-  }
-
-  .close-lightbox {
-    font-size: 30px;
-    top: 15px;
-    right: 20px;
+  .card-direcao {
+    margin-bottom: 25px;
+    max-width: 100%;
   }
 }
